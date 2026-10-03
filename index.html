@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEDRIC REYES LIVE MESSAGE PREVIEW</title>
+    <link rel="icon" type="image/png" href="icon%20logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="brand-row">
+            <img src="CED COVER.png" alt="Cedric Reyes logo and portrait" class="header-cover">
+        </div>
+        <div class="header-section">
+            <div class="header-title">
+                <h2>Live Message Preview</h2>
+                <p class="header-subtitle">HELLO, WELCOME TO MY WORLD!</p>
+            </div>
+            <button id="themeToggleBtn" class="theme-btn">Switch Theme</button>
+        </div>
+
+        <label class="message-label" for="messageInput"><span aria-hidden="true" title="Saturn">🪐</span> <strong>Write Your Message:</strong></label>
+        <textarea id="messageInput" maxlength="280" placeholder="Start typing your message here..."></textarea>
+        
+        <div class="counter">
+            Character Count: <span id="charCount">0/280</span>
+        </div>
+
+        <div class="preview-title"><span aria-hidden="true" title="Sun">☀️</span> Live Preview:</div>
+        <div class="preview-box">
+            <span id="messagePreview"><em>Your live preview will appear here...</em></span>
+        </div>
+
+        <section class="extra-features" aria-label="Extra features">
+            <div class="extra-feature-cards">
+                <article class="extra-feature-card">
+                    <div class="extra-feature-icon" aria-hidden="true">🌍</div>
+                    <h4>SHOW AND HIDE</h4>
+                    <p>Click the button to show or hide an explanation.</p>
+                    <button id="toggleExplanationBtn" class="feature-btn" type="button" aria-controls="explanationText" aria-expanded="false">Show Explanation</button>
+                    <p id="explanationText" class="feature-explanation feature-message" hidden><strong>CEDRIC REYES LIVE MESSAGE PREVIEW updates as you type, so you can see your message before sharing it. THANK YOU!</strong></p>
+                </article>
+
+                <article class="extra-feature-card">
+                    <div class="extra-feature-icon" aria-hidden="true">🌙</div>
+                    <h4>CREATE AN ELEMENT</h4>
+                    <p>Click the button to create a new inspiring note.</p>
+                    <button id="createNoteBtn" class="feature-btn" type="button">Add Inspiring Note</button>
+                    <div id="temporaryNote" class="temporary-note feature-message" role="status" aria-live="polite" hidden></div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <img src="logo.png" alt="Cedric Reyes logo" class="footer-logo">
+            <div class="footer-line"></div>
+            <p>© 2026 | ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
